@@ -21,35 +21,47 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <header class="header">
-    <div class="container">
-      <nav>
-        <a class="logo-link" href=""><span class="logo">WEB</span>STUDIO</a>
-        <ul class="headerlist">
-          <li class="header-linkitem">
-            <a class="header-link link" href="./index.html">Studio</a>
-          </li>
-          <li class="header-linkitem">
-            <a class="header-link curent link" href="./portfolio.html"
-              >Portfolio</a
+      <div class="container">
+        <nav>
+          <a class="logo-link" href=""><span class="logo">WEB</span>STUDIO</a>
+          <button
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg class="mobileopenbtn"
+            width="32"
+            height="32"
+          >
+          <use href="./img/icons.svg#menu-burger-icon"></use>
+          </svg>
+        </button>
+          <ul class="headerlist">
+            <li class="header-linkitem">
+              <a class="header-link link" href="./index.html">Studio</a>
+            </li>
+            <li class="header-linkitem">
+              <a class="header-link  curent  link" href="./portfolio.html">Portfolio</a>
+            </li>
+            <li class="header-linkitem">
+              <a class="header-link link" href="">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="link contacts-link">
+          <li>
+            <a class="contacts" href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
             >
           </li>
-          <li class="header-linkitem">
-            <a class="header-link link" href="">Contacts</a>
+          <li>
+            <a class="contacts" href="tel:+11(000)111-11-11"
+              >+11(000)11-111-11</a
+            >
           </li>
         </ul>
-      </nav>
-      <ul class="link contacts-link">
-        <li>
-          <a class="contacts" href="mailto:info@devstudio.com"
-            >info@devstudio.com</a
-          >
-        </li>
-        <li>
-          <a class="contacts" href="tel:+11(000)111-11-11">+11(000)11-111-11</a>
-        </li>
-      </ul>
-    </div>
-  </header>
+      </div>
+    </header>
 
   <body>
     <section class="prtf">
@@ -358,4 +370,76 @@
       </div>
     </div>
   </footer>
+      <!-- Mobile menu -->
+      <div class="menu-container js-menu-container" id="mobile-menu">
+        <button class="menu-toggle js-close-menu">
+                    <svg class="modal-close-icon-mm" width="8px" height="8px">
+            <use href="./img/icons.svg#icon-close-black"></use>
+          </svg>
+        </button>
+
+        <ul class="mobile-menu list">
+          <li class="mobile-menu-item">
+            <a class="mobile-menu-link link" href="./index.html">Studio</a>
+          </li>
+          <li class="mobile-menu-item">
+            <a class="mobile-menu-link link" href="./portfolio.html">Portfolio</a>
+          </li>
+          <li class="mobile-menu-item">
+            <a class="mobile-menu-link link" href="">Contacts</a>
+          </li>
+        </ul>
+
+        <ul class="mobile-contacts list">
+          <li class="mobile-contacts-item">
+            <a class="mobile-contacts-link accent link" href="tel:+11(000)1111111"
+              >+11 (000) 111-11-11</a
+            >
+          </li>
+          <li class="mobile-contacts-item">
+            <a class="mobile-contacts-link link" href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
+          </li>
+        </ul>
+
+        <ul class="soc-link-mobm link">
+                  <li class="soc-link-mobm-item">
+                    <a class="soclinkitemmob" href="">
+                      <svg class="svgiconsa">
+                        <use href="./img/icons.svg#icon-instagram"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="soc-link-mobm-item">
+                    <a class="soclinkitemmob" href="">
+                      <svg class="svgiconsa">
+                        <use href="./img/icons.svg#icon-twitter"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="soc-link-mobm-item">
+                    <a class="soclinkitemmob" href="">
+                      <svg class="svgiconsa">
+                        <use href="./img/icons.svg#icon-facebook"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="soc-link-mobm-item">
+                    <a class="soclinkitemmob" href="">
+                      <svg class="svgiconsa">
+                        <use href="./img/icons.svg#icon-linkedin"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+      </div>
+    </div>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>
 </html>

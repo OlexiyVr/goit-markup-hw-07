@@ -22,16 +22,28 @@
   </head>
 
   <body>
-    <!-- <header class="header">
+    <header class="header">
       <div class="container">
         <nav>
           <a class="logo-link" href=""><span class="logo">WEB</span>STUDIO</a>
+          <button
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg class="mobileopenbtn"
+            width="32"
+            height="32"
+          >
+          <use href="./img/icons.svg#menu-burger-icon"></use>
+          </svg>
+        </button>
           <ul class="headerlist">
             <li class="header-linkitem">
-              <a class="header-link curent link" href="./index.html">Studio</a>
+              <a class="header-link curent  link" href="./index.html">Studio</a>
             </li>
             <li class="header-linkitem">
-              <a class="header-link link" href="./portfolio.html">Portfolio</a>
+              <a class="header-link   link" href="./portfolio.html">Portfolio</a>
             </li>
             <li class="header-linkitem">
               <a class="header-link link" href="">Contacts</a>
@@ -39,7 +51,7 @@
           </ul>
         </nav>
         <ul class="link contacts-link">
-          <li>
+          <li class="cont-lnk">
             <a class="contacts" href="mailto:info@devstudio.com"
               >info@devstudio.com</a
             >
@@ -51,17 +63,17 @@
           </li>
         </ul>
       </div>
-    </header> -->
+    </header>
 
     <main>
-      <!-- <section class="hero">
+      <section class="hero">
         <div class="container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
           <button class="header-btn" data-modal-open type="button">
             Order Service
           </button>
         </div>
-      </section> -->
+      </section>
       <section class="about">
         <div class="container">
           <h2 class="about-title-top">Our Feature</h2>
@@ -122,13 +134,22 @@
           <h2 class="service-title">What are we doing</h2>
           <ul class="service-img">
             <li class="servise-item">
-              <img width="360" height="300" src="img/photoa.jpg" alt="photoa" />
+              <img width="360" 
+              height="300" 
+              srcset="./img/whatawd/img_1_360_result.jpg 360w,
+              ./img/whatawd/img_1_720_result.jpg 720w"
+              sizes="(min-width: 1200px) 360px"
+              src="./img/whatawd/img_1_360_result.jpg" 
+              alt="photoa" />
             </li>
             <li class="servise-item">
               <img
                 width="360"
                 height="300"
-                src="img/photobb.jpg"
+              srcset="./img/whatawd/img_2_360_result.jpg 360w,
+              ./img/whatawd/img_2_720_result.jpg 720w"
+              sizes="(min-width: 1200px) 360px"
+              src="./img/whatawd/img_2_360_result.jpg"
                 alt="photobb"
               />
             </li>
@@ -136,7 +157,10 @@
               <img
                 width="360"
                 height="300"
-                src="img/photocc.jpg"
+              srcset="./img/whatawd/img_3_360_result.jpg 360w,
+              ./img/whatawd/img_3_720_result.jpg 720w"
+              sizes="(min-width: 1200px) 360px"
+              src="./img/whatawd/img_3_360_result.jpg"
                 alt="photocc"
               />
             </li>
@@ -151,7 +175,8 @@
               <img
                 width="264"
                 height="260"
-                src="img/teamcarda.jpg"
+                srcset="./img/ourteam/Ourteamphone@1x_result.jpg 1x, ./img/ourteam/Ourteamphone@2x_result.jpg 2x"
+                src="./img/ourteam/Ourteamphone@1x_result.jpg"
                 alt="teamcarda"
               />
               <div class="imgtxt">
@@ -193,7 +218,8 @@
               <img
                 width="264"
                 height="260"
-                src="img/teamcardbb.jpg"
+                srcset="./img/ourteam/Ourteamphonetwo@1x_result.jpg 1x, ./img/ourteam/Ourteamphonetwo@2x_result.jpg 2x"
+                src="./img/ourteam/Ourteamphonetwo@1x_result.jpg"
                 alt="teamcardbb"
               />
               <div class="imgtxt">
@@ -235,7 +261,8 @@
               <img
                 width="264"
                 height="260"
-                src="img/teamcardc.jpg"
+                srcset="./img/ourteam/Ourteamphonethree@1x_result.jpg 1x, ./img/ourteam/Ourteamphonethree@2x_result.jpg 2x"
+                src="./img/ourteam/Ourteamphonethree@1x_result.jpg"
                 alt="teamcardc"
               />
               <div class="imgtxt">
@@ -277,7 +304,8 @@
               <img
                 width="264"
                 height="260"
-                src="img/teamcardd.jpg"
+                srcset="./img/ourteam/Ourteamphonefour@1x_result.jpg 1x, ./img/ourteam/Ourteamphonefour@2x_result.jpg 2x"
+                src="./img/ourteam/Ourteamphonefour@1x_result.jpg"
                 alt="teamcardd"
               />
               <div class="imgtxt">
@@ -509,30 +537,20 @@
         </form>
       </div>
     </div>
-    <!-- Mobile menu
+    <!-- Mobile menu -->
       <div class="menu-container js-menu-container" id="mobile-menu">
         <button class="menu-toggle js-close-menu">
-          <svg
-            fill="currentColor"
-            viewBox="0 0 20 20"
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-          >
-            <path
-              fill-rule="evenodd"
-              d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-              clip-rule="evenodd"
-            ></path>
+                    <svg class="modal-close-icon-mm" width="8px" height="8px">
+            <use href="./img/icons.svg#icon-close-black"></use>
           </svg>
         </button>
 
         <ul class="mobile-menu list">
           <li class="mobile-menu-item">
-            <a class="mobile-menu-link link" href="">Studio</a>
+            <a class="mobile-menu-link link" href="./index.html">Studio</a>
           </li>
           <li class="mobile-menu-item">
-            <a class="mobile-menu-link link" href="">Portfolio</a>
+            <a class="mobile-menu-link link" href="./portfolio.html">Portfolio</a>
           </li>
           <li class="mobile-menu-item">
             <a class="mobile-menu-link link" href="">Contacts</a>
@@ -552,63 +570,45 @@
           </li>
         </ul>
 
-        <ul class="mobile-socials list">
-          <li class="mobile-socials-item">
-            <a
-              class="mobile-socials-link link"
-              href="https://instagram.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Instagram icon"
-            >
-              <svg class="mobile-socials-icon" width="20" height="20">
-                <use href="./images/icons.svg#instagram"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="mobile-socials-item">
-            <a
-              class="mobile-socials-link link"
-              href="https://twitter.com"
-              aria-label="Twitter icon"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <svg class="mobile-socials-icon" width="20" height="20">
-                <use href="./images/icons.svg#twitter"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="mobile-socials-item">
-            <a
-              class="mobile-socials-link link"
-              href="https://facebook.com"
-              aria-label="Facebook icon"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <svg class="mobile-socials-icon" width="20" height="20">
-                <use href="./images/icons.svg#facebook"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="mobile-socials-item">
-            <a
-              class="mobile-socials-link link"
-              href="https://linkedin.com"
-              aria-label="LinkedIn icon"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <svg class="mobile-socials-icon" width="20" height="20">
-                <use href="./images/icons.svg#linkedin"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
+        <ul class="soc-link-mobm link">
+                  <li class="soc-link-mobm-item">
+                    <a class="soclinkitemmob" href="">
+                      <svg class="svgiconsa">
+                        <use href="./img/icons.svg#icon-instagram"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="soc-link-mobm-item">
+                    <a class="soclinkitemmob" href="">
+                      <svg class="svgiconsa">
+                        <use href="./img/icons.svg#icon-twitter"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="soc-link-mobm-item">
+                    <a class="soclinkitemmob" href="">
+                      <svg class="svgiconsa">
+                        <use href="./img/icons.svg#icon-facebook"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="soc-link-mobm-item">
+                    <a class="soclinkitemmob" href="">
+                      <svg class="svgiconsa">
+                        <use href="./img/icons.svg#icon-linkedin"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
       </div>
-    </div> -->
-
+    </div>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>

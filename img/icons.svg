@@ -80,5 +80,6 @@
 <symbol id="icon-uncheck" viewBox="0 0 32 32">
 <path d="M4 1.25h24c1.519 0 2.75 1.231 2.75 2.75v24c0 1.519-1.231 2.75-2.75 2.75h-24c-1.519 0-2.75-1.231-2.75-2.75v-24c0-1.519 1.231-2.75 2.75-2.75z"></path>
 </symbol>
+<symbol id="menu-burger-icon" viewBox="0 0 20 20"><path d="M0 3h20v2h-20v-2zM0 9h20v2h-20v-2zM0 15h20v2h-20v-2z"></path></symbol>
 </defs>
 </svg>
