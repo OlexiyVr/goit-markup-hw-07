@@ -22,7 +22,7 @@
   </head>
 
   <body>
-    <header class="header">
+    <!-- <header class="header">
       <div class="container">
         <nav>
           <a class="logo-link" href=""><span class="logo">WEB</span>STUDIO</a>
@@ -51,22 +51,22 @@
           </li>
         </ul>
       </div>
-    </header>
+    </header> -->
 
     <main>
-      <section class="hero">
+      <!-- <section class="hero">
         <div class="container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
           <button class="header-btn" data-modal-open type="button">
             Order Service
           </button>
         </div>
-      </section>
+      </section> -->
       <section class="about">
         <div class="container">
           <h2 class="about-title-top">Our Feature</h2>
           <ul class="about-list">
-            <li>
+            <li class="about-listitem">
               <div class="aboutlistsvg">
                 <svg class="aboutsvg">
                   <use href="./img/icons.svg#icon-Group"></use>
@@ -78,7 +78,7 @@
                 the perfect and creative solution.
               </p>
             </li>
-            <li>
+            <li class="about-listitem">
               <div class="aboutlistsvg">
                 <svg class="aboutsvg">
                   <use href="./img/icons.svg#icon-clock"></use>
@@ -90,7 +90,7 @@
                 within the shortest possible time.
               </p>
             </li>
-            <li>
+            <li class="about-listitem">
               <div class="aboutlistsvg">
                 <svg class="aboutsvg">
                   <use href="./img/icons.svg#icon-Vector"></use>
@@ -102,7 +102,7 @@
                 growth opportunities and minimize risk.
               </p>
             </li>
-            <li>
+            <li class="about-listitem">
               <div class="aboutlistsvg">
                 <svg class="aboutsvg">
                   <use href="./img/icons.svg#icon-astronaut"></use>
@@ -121,10 +121,10 @@
         <div class="container">
           <h2 class="service-title">What are we doing</h2>
           <ul class="service-img">
-            <li>
+            <li class="servise-item">
               <img width="360" height="300" src="img/photoa.jpg" alt="photoa" />
             </li>
-            <li>
+            <li class="servise-item">
               <img
                 width="360"
                 height="300"
@@ -132,7 +132,7 @@
                 alt="photobb"
               />
             </li>
-            <li>
+            <li class="servise-item">
               <img
                 width="360"
                 height="300"
@@ -147,7 +147,7 @@
         <div class="container">
           <h2 class="team-title-top">Our Team</h2>
           <ul class="team-photos">
-            <li class="team-photo">
+            <li class="team-photo ftd">
               <img
                 width="264"
                 height="260"
@@ -189,7 +189,7 @@
                 </ul>
               </div>
             </li>
-            <li class="team-photo">
+            <li class="team-photo ftd">
               <img
                 width="264"
                 height="260"
@@ -231,7 +231,7 @@
                 </ul>
               </div>
             </li>
-            <li class="team-photo">
+            <li class="team-photo ftd">
               <img
                 width="264"
                 height="260"
@@ -273,7 +273,7 @@
                 </ul>
               </div>
             </li>
-            <li class="team-photo">
+            <li class="team-photo ftd">
               <img
                 width="264"
                 height="260"
@@ -321,7 +321,7 @@
       <section class="Customers">
         <div class="container">
           <h2 class="Customerstitle">Customers</h2>
-          <ul class="link">
+          <ul class="link cstmr">
             <li class="logolista">
               <a class="logolist" href="">
                 <svg class="logolistsitem">
@@ -373,7 +373,7 @@
       <div class="container">
         <div class="footersuper">
           <div class="footerboxes soclistftone">
-            <ul class="link">
+            <ul class="link ftr">
               <li>
                 <a class="logo-link-footer" href=""
                   ><span class="logo">WEB</span>STUDIO</a
@@ -386,7 +386,7 @@
             </ul>
           </div>
           <div class="footerboxes soclistftoneboll">
-            <h2 class="footertitle">Social media</h2>
+            <h2 class="footerformtitle">Social media</h2>
             <ul class="footersoc link">
               <li class="soclistfootera">
                 <a class="soclistfooter" href="">
@@ -509,6 +509,106 @@
         </form>
       </div>
     </div>
+    <!-- Mobile menu
+      <div class="menu-container js-menu-container" id="mobile-menu">
+        <button class="menu-toggle js-close-menu">
+          <svg
+            fill="currentColor"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+              clip-rule="evenodd"
+            ></path>
+          </svg>
+        </button>
+
+        <ul class="mobile-menu list">
+          <li class="mobile-menu-item">
+            <a class="mobile-menu-link link" href="">Studio</a>
+          </li>
+          <li class="mobile-menu-item">
+            <a class="mobile-menu-link link" href="">Portfolio</a>
+          </li>
+          <li class="mobile-menu-item">
+            <a class="mobile-menu-link link" href="">Contacts</a>
+          </li>
+        </ul>
+
+        <ul class="mobile-contacts list">
+          <li class="mobile-contacts-item">
+            <a class="mobile-contacts-link accent link" href="tel:+11(000)1111111"
+              >+11 (000) 111-11-11</a
+            >
+          </li>
+          <li class="mobile-contacts-item">
+            <a class="mobile-contacts-link link" href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
+          </li>
+        </ul>
+
+        <ul class="mobile-socials list">
+          <li class="mobile-socials-item">
+            <a
+              class="mobile-socials-link link"
+              href="https://instagram.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Instagram icon"
+            >
+              <svg class="mobile-socials-icon" width="20" height="20">
+                <use href="./images/icons.svg#instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="mobile-socials-item">
+            <a
+              class="mobile-socials-link link"
+              href="https://twitter.com"
+              aria-label="Twitter icon"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <svg class="mobile-socials-icon" width="20" height="20">
+                <use href="./images/icons.svg#twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="mobile-socials-item">
+            <a
+              class="mobile-socials-link link"
+              href="https://facebook.com"
+              aria-label="Facebook icon"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <svg class="mobile-socials-icon" width="20" height="20">
+                <use href="./images/icons.svg#facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="mobile-socials-item">
+            <a
+              class="mobile-socials-link link"
+              href="https://linkedin.com"
+              aria-label="LinkedIn icon"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <svg class="mobile-socials-icon" width="20" height="20">
+                <use href="./images/icons.svg#linkedin"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div> -->
+
     <script src="./js/modal.js"></script>
   </body>
 </html>
