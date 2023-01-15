@@ -1230,6 +1230,7 @@ input::placeholder {
   font-size: 12px;
 }
 
+
 .registration-form-input {
   font-size: 12px;
   line-height: 1.33;
@@ -1279,15 +1280,17 @@ input::placeholder {
   transition-timing-function: var(--transition-timing-function-goit);
 }
 
+.registration-form-message:focus{
+  outline-color: var(--brand-primary-color);
+}
+
 .registration-form-message::placeholder {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
   line-height: 16px;
-
   letter-spacing: 0.04em;
-
   color: rgba(117, 117, 117, 0.5);
 }
 
@@ -1296,6 +1299,23 @@ input::placeholder {
   border-color: var(--brand-primary-color);
 }
 
+.registration-form-input:focus,
+.registration-form-message:focus {
+  outline: 1px solid var(--brand-primary-color);
+  box-shadow: unset;
+}
+
+.registration-form-input::placeholder,
+.registration-form-message::placeholder {
+  opacity: 0;
+  transition: opacity 250ms var(--transition-timing-function-goit)
+}
+
+.registration-form-input:focus::placeholder,
+.registration-form-message:focus::placeholder {
+  opacity: 1;
+  transition-delay: 200ms;
+}
 /* checkbox */
 .registration-form-agreement {
   display: flex;
@@ -1370,6 +1390,10 @@ input::placeholder {
 .send-registration-btn:hover,
 .send-registration-btn:focus {
   background-color: #404bbf;
+}
+
+.registration-form-link{
+  color: var(--brand-primary-color);
 }
 
 /* Portfolio  Page*/
